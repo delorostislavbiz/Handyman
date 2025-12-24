@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handyman in Morristown, NJ | Handyman NJ - Residential Repair Specialists</title>
+    <meta name="description" content="Your trusted handyman in Morristown, NJ. Home repairs, maintenance, installations. Family-owned, 20+ years experience. Free estimates.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand': {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                        }
+                    },
+                    fontFamily: {
+                        'display': ['"DM Serif Display"', 'Georgia', 'serif'],
+                        'body': ['"Source Sans 3"', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 50%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-300 font-body">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/95 backdrop-blur-sm border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <!-- Logo -->
+            <a href="../../index.html" class="font-display text-xl md:text-2xl text-white"><span class="text-brand-500">[LOGO]</span> Handyman NJ</a>
+            <nav class="hidden lg:flex items-center gap-8">
+                <div class="relative group"><button class="text-slate-300 hover:text-white transition-colors flex items-center gap-1">Services<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+                    <div class="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <div class="bg-slate-900 border border-slate-800 rounded-lg shadow-xl py-2 min-w-[200px]">
+                        <a href="../../services/tv-mounting.html">TV Mounting</a>
+                        <a href="../../services/furniture-assembly.html">Furniture Assembly</a>
+                        <a href="../../services/smart-home.html">Smart Home</a>
+                        <a href="../../services/painting.html">Painting</a>
+                        <a href="../../services/drywall-repair.html">Drywall Repair</a>
+                        <a href="../../services/plumbing.html">Plumbing</a>
+                        <a href="../../services/electrical.html">Electrical</a>
+                        <a href="../../services/general-repairs.html">General Repairs</a>
+                    </div>
+                </div>
+                <div class="relative group"><button class="text-slate-300 hover:text-white transition-colors flex items-center gap-1">Service Areas<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+                    <div class="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <div class="bg-slate-900 border border-slate-800 rounded-lg shadow-xl py-2 min-w-[200px]">
+                        <a href="../bergen-county.html">Bergen County</a>
+                        <a href="../hudson-county.html">Hudson County</a>
+                        <a href="../morris-county.html">Morris County</a>
+                        <a href="../essex-county.html">Essex County</a>
+                        <a href="../passaic-county.html">Passaic County</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="hidden md:flex items-center gap-4">
+                    <a href="tel:+1XXXXXXXXXX" class="text-slate-400 hover:text-white transition-colors">(XXX) XXX-XXXX</a>
+                    <a href="#estimate" class="bg-brand-500 hover:bg-brand-600 text-slate-900 font-semibold px-5 py-2.5 rounded-lg transition-colors">
+                        Free Estimate
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-white p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-50 hidden">
+        <div class="absolute inset-0 bg-black/60" id="mobile-menu-overlay"></div>
+        <div class="absolute right-0 top-0 bottom-0 w-80 bg-slate-900 transform transition-transform duration-300 translate-x-full" id="mobile-menu-panel">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-8">
+                    <span class="font-display text-xl text-white">Menu</span>
+                    <button id="mobile-menu-close" class="text-slate-400 hover:text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="space-y-6">
+                    <div>
+                        <div class="text-brand-500 text-sm font-semibold uppercase tracking-wider mb-3">Services</div>
+                        <div class="space-y-2">
+                            <a href="../../services/tv-mounting.html" class="block text-slate-300 hover:text-white py-1">TV Mounting</a>
+                            <a href="../../services/furniture-assembly.html" class="block text-slate-300 hover:text-white py-1">Furniture Assembly</a>
+                            <a href="../../services/smart-home.html" class="block text-slate-300 hover:text-white py-1">Smart Home</a>
+                            <a href="../../services/painting.html" class="block text-slate-300 hover:text-white py-1">Painting</a>
+                            <a href="../../services/drywall-repair.html" class="block text-slate-300 hover:text-white py-1">Drywall Repair</a>
+                            <a href="../../services/plumbing.html" class="block text-slate-300 hover:text-white py-1">Plumbing</a>
+                            <a href="../../services/electrical.html" class="block text-slate-300 hover:text-white py-1">Electrical</a>
+                            <a href="../../services/general-repairs.html" class="block text-slate-300 hover:text-white py-1">General Repairs</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-brand-500 text-sm font-semibold uppercase tracking-wider mb-3">Service Areas</div>
+                        <div class="space-y-2">
+                            <a href="../bergen-county.html" class="block text-white py-1">Bergen County</a>
+                            <a href="../hudson-county.html" class="block text-slate-300 hover:text-white py-1">Hudson County</a>
+                            <a href="../morris-county.html" class="block text-slate-300 hover:text-white py-1">Morris County</a>
+                            <a href="../essex-county.html" class="block text-slate-300 hover:text-white py-1">Essex County</a>
+                            <a href="../passaic-county.html" class="block text-slate-300 hover:text-white py-1">Passaic County</a>
+                        </div>
+                    </div>
+                    <div class="pt-6 border-t border-slate-800">
+                        <a href="tel:+1XXXXXXXXXX" class="block text-white text-lg mb-4">(XXX) XXX-XXXX</a>
+                        <a href="#estimate" class="block bg-brand-500 hover:bg-brand-600 text-slate-900 font-semibold px-5 py-3 rounded-lg text-center transition-colors">
+                            Get Free Estimate
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumbs -->
+    <div class="pt-20 bg-slate-900 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <nav class="text-sm">
+            <a href="../../index.html" class="text-brand-500 hover:text-brand-400">Home</a><span class="text-slate-600 mx-2">/</span><a href="#" class="text-brand-500 hover:text-brand-400">Service Areas</a><span class="text-slate-600 mx-2">/</span><a href="../morris-county.html" class="text-brand-500 hover:text-brand-400">Morris County</a><span class="text-slate-600 mx-2">/</span><span class="text-slate-400">Morristown</span></nav></div></div>
+
+    <!-- Page Hero -->
+    <section class="bg-gradient-to-b from-slate-900 to-slate-950 py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="font-display text-4xl md:text-5xl lg:text-6xl text-white mb-6">Your Local Handyman in Morristown, NJ</h1>
+            <p class="text-xl text-slate-400 max-w-3xl mb-8">Morristown's historic homes have seen George Washington. And a lot of wear and tear since. We preserve their character while bringing their systems into the 21st century.</p>
+            <p class="text-xl text-slate-400 max-w-3xl mb-8">Family-owned. 20+ years experience. We show up on time.</p>
+            <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                <a href="#estimate" class="bg-brand-500 hover:bg-brand-600 text-slate-900 font-semibold px-8 py-4 rounded-lg text-lg transition-colors">Get a Free Quote</a>
+                <span>Or call: <strong>(XXX) XXX-XXXX</strong></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Context -->
+    <section class="py-16 md:py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-display text-3xl md:text-4xl text-white mb-8">Handyman Services for Morristown Homes</h2><div class="prose prose-lg prose-invert max-w-none">
+            <p>Morristown is the county seat of Morris County. It's also a National Historic District. 213 acres, 352 buildings. Colonial Revival, Victorian, Georgian, Italianate mansions on tree-lined streets.</p>
+            <p>22-25% of housing was built before 1940. These aren't simple suburban homes. They're historic properties that require careful handling.</p>
+            <p><strong>What that means for homeowners:</strong></p>
+            <ul>
+                <li>Foundation and basement issues from clay-rich soil</li>
+                <li>Water damage from aging roofs, flashing, and caulking</li>
+                <li>Historic woodwork, wiring, and plumbing needing updates</li>
+                <li>Fireplaces and chimneys with cracked masonry</li>
+                <li>Siding leaks and rotted sheathing from decades of weather</li>
+            </ul>
+            <p>Morristown attracts young professionals (median age 34) who appreciate historic character. We help them maintain it.</p>
+        </div>
+    </section>
+
+    <!-- Common Issues -->
+    <section class="py-16 md:py-20 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-display text-3xl md:text-4xl text-white mb-4">CommonCommon Home Repairs in Morristown</h2>
+            <p>Based on our experience here, this is what we fix most often:</p>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6"><h3 class="font-display text-lg text-white mb-3">Historic Home Preservation</h3>
+                    <p>Original windows restored, not replaced. Woodwork repaired, not covered. Plaster patched properly. We respect what makes these homes special.</p>
+                </div>
+                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6"><h3 class="font-display text-lg text-white mb-3">Foundation Moisture</h3>
+                    <p>Morris County's clay soil expands and contracts. Cracks form. Water gets in. We repair cracks and improve drainage.</p>
+                </div>
+                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6"><h3 class="font-display text-lg text-white mb-3">Chimney and Fireplace Work</h3>
+                    <p>These old homes have original fireplaces. Cracked masonry, deteriorating liners. We handle basic repairs and know when to call a mason.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-16 md:py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2>What We Do in Morristown</h2>
+            <p>One call handles everything on your list.</p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <a href="../../services/tv-mounting.html" class="block bg-slate-800/50 border border-slate-700 rounded-lg p-4 hover:border-brand-500/50 hover:bg-slate-800 transition-all"><span class="text-white font-medium">TV Mounting</span><span class="text-slate-500 text-sm block">plaster, brick, stone</span></a>
+                <a href="../../services/furniture-assembly.html" class="block bg-slate-800/50 border border-slate-700 rounded-lg p-4 hover:border-brand-500/50 hover:bg-slate-800 transition-all"><span class="text-white font-medium">Furniture Assembly</span><span class="text-slate-500 text-sm block">historic and modern homes</span></a>
+                <a href="../../services/smart-home.html" class="block bg-slate-800/50 border border-slate-700 rounded-lg p-4 hover:border-brand-500/50 hover:bg-slate-800 transition-all"><span class="text-white font-medium">Smart Home Installation</span><span class="text-slate-500 text-sm block">old houses, new tech</span></a>
+                <a href="../../services/painting.html" class="block bg-slate-800/50 border border-slate-700 rounded-lg p-4 hover:border-brand-500/50 hover:bg-slate-800 transition-all"><span class="text-white font-medium">Painting</span><span class="text-slate-500 text-sm block">period colors, modern finishes</span></a>
+                <a href="../../services/drywall-repair.html" class="block bg-slate-800/50 border border-slate-700 rounded-lg p-4 hover:border-brand-500/50 hover:bg-slate-800 transition-all"><span class="text-white font-medium">Drywall Repair</span><span class="text-slate-500 text-sm block">plaster repair specialists</span></a>
+                <a href="../../services/plumbing.html" class="block bg-slate-800/50 border border-slate-700 rounded-lg p-4 hover:border-brand-500/50 hover:bg-slate-800 transition-all"><span class="text-white font-medium">Plumbing Repairs</span><span class="text-slate-500 text-sm block">old and new systems</span></a>
+                <a href="../../services/electrical.html" class="block bg-slate-800/50 border border-slate-700 rounded-lg p-4 hover:border-brand-500/50 hover:bg-slate-800 transition-all"><span class="text-white font-medium">Electrical Repairs</span><span class="text-slate-500 text-sm block">safe upgrades</span></a>
+                <a href="../../services/general-repairs.html" class="block bg-slate-800/50 border border-slate-700 rounded-lg p-4 hover:border-brand-500/50 hover:bg-slate-800 transition-all"><span class="text-white font-medium">General Repairs</span><span class="text-slate-500 text-sm block">windows, doors, trim</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Response Time -->
+    <section class="py-16 md:py-20 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-8 md:p-12 max-w-2xl mx-auto"><h3 class="font-display text-2xl text-white mb-6">Fast Response in Morristown</h3>
+                <p>We work in Morristown regularly. Downtown, the historic district, and surrounding neighborhoods.</p>
+                <p><strong>Same-day service:</strong> Often available</p>
+                <p><strong>Scheduled appointments:</strong> Usually within 2-3 days</p>
+                <p><strong>Historic home consultations:</strong> Happy to discuss your project</p>
+                <p style="margin-top: 20px;"><a href="#estimate" class="btn">Schedule Now</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="content-section">
+        <div class="container">
+            <h2>What Morristown Homeowners Say</h2>
+            <div class="testimonial-block">
+                <blockquote class="text-xl md:text-2xl text-white font-display mb-4">"Our 1890s Victorian needed window repairs. They rebuilt the sashes instead of telling us to replace everything with vinyl. That's the kind of care these old houses need."</blockquote>
+                <p class="text-brand-500">Katherine B., Morristown</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nearby Areas -->
+    <section class="py-16 md:py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-8 md:p-12 max-w-2xl mx-auto">
+                <h3>Also Serving Near Morristown</h3>
+                <p>We provide handyman services in:</p>
+                <ul class="grid grid-cols-2 gap-2 mb-6">
+                    <li><a class="text-brand-500 hover:text-brand-400" href="madison.html">Madison</a></li>
+                    <li><a class="text-brand-500 hover:text-brand-400" href="#">Morris Plains</a></li>
+                    <li><a class="text-brand-500 hover:text-brand-400" href="#">Florham Park</a></li>
+                    <li><a class="text-brand-500 hover:text-brand-400" href="#">Chatham</a></li>
+                    <li><a class="text-brand-500 hover:text-brand-400" href="#">Mendham</a></li>
+                </ul>
+                <p style="margin-top: 15px;">All of Morris County is within our service area. <a href="../morris-county.html">View Morris County Page</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" id="estimate">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10"><h2 class="font-display text-3xl md:text-4xl text-white mb-4">Ready to Care for Your Historic Home?</h2>
+            <p class="text-slate-400 text-lg">Morristown homes are irreplaceable. One call to a handyman who respects that, and your property gets the care it deserves.</p></div>
+            <form class="space-y-4">
+                <form>
+                    <div><input type="text" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 transition-colors" placeholder="Your Name">
+                    </div>
+                    <div><input type="tel" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 transition-colors" placeholder="Phone Number">
+                    </div>
+                    <div><input type="email" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 transition-colors" placeholder="Email Address">
+                    </div>
+                    <div><textarea class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 transition-colors resize-none" placeholder="What's on your repair list?"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-brand-500 hover:bg-brand-600 text-slate-900 font-semibold px-8 py-4 rounded-lg text-lg transition-colors">Get My Free Quote</button>
+                </form><p class="text-center text-slate-500 mt-4">We respond within 2 hours. Yes, really.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h4 class="font-display text-white text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2"><li><a href="#" class="text-slate-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors">Service Areas</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-display text-white text-lg mb-4">Services</h4>
+                    <ul>
+                        <li><a href="../../services/tv-mounting.html" class="text-slate-400 hover:text-white transition-colors">TV Mounting</a></li>
+                        <li><a href="../../services/furniture-assembly.html" class="text-slate-400 hover:text-white transition-colors">Furniture Assembly</a></li>
+                        <li><a href="../../services/plumbing.html" class="text-slate-400 hover:text-white transition-colors">Plumbing</a></li>
+                        <li><a href="../../services/electrical.html" class="text-slate-400 hover:text-white transition-colors">Electrical</a></li>
+                        <li><a href="../../services/painting.html" class="text-slate-400 hover:text-white transition-colors">Painting</a></li>
+                        <li><a href="../../services/drywall-repair.html" class="text-slate-400 hover:text-white transition-colors">Drywall Repair</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-display text-white text-lg mb-4">Service Areas</h4>
+                    <ul>
+                        <li><a href="../bergen-county.html" class="text-slate-400 hover:text-white transition-colors">Bergen County</a></li>
+                        <li><a href="../hudson-county.html" class="text-slate-400 hover:text-white transition-colors">Hudson County</a></li>
+                        <li><a href="../morris-county.html" class="text-slate-400 hover:text-white transition-colors">Morris County</a></li>
+                        <li><a href="../essex-county.html" class="text-slate-400 hover:text-white transition-colors">Essex County</a></li>
+                        <li><a href="../passaic-county.html" class="text-slate-400 hover:text-white transition-colors">Passaic County</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-display text-white text-lg mb-4">Contact</h4>
+                    <ul>
+                        <li>Phone: (XXX) XXX-XXXX</li>
+                        <li>Email: info@handymannj.com</li>
+                        <li>License #XXXXX</li>
+                    </ul>
+                </div>
+            </div><div class="border-t border-slate-800 pt-8 text-center text-slate-500 text-sm">
+                &copy; 2024 [Brand Name]. All rights reserved. | Family-Owned & Operated | Fully Insured in New Jersey
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuPanel = document.getElementById('mobile-menu-panel');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+
+        function openMenu() {
+            mobileMenu.classList.remove('hidden');
+            setTimeout(() => {
+                mobileMenuPanel.classList.remove('translate-x-full');
+            }, 10);
+        }
+
+        function closeMenu() {
+            mobileMenuPanel.classList.add('translate-x-full');
+            setTimeout(() => {
+                mobileMenu.classList.add('hidden');
+            }, 300);
+        }
+
+        mobileMenuBtn.addEventListener('click', openMenu);
+        mobileMenuClose.addEventListener('click', closeMenu);
+        mobileMenuOverlay.addEventListener('click', closeMenu);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handyman Northern NJ | The One Who Actually Shows Up</title>
+    <meta name="description" content="Reliable handyman services in Northern New Jersey. Family-owned, 20+ years experience. TV mounting, furniture assembly, plumbing, electrical, painting. We show up on time or you get $25 off.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand': {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f',
+                        }
+                    },
+                    fontFamily: {
+                        'display': ['"DM Serif Display"', 'Georgia', 'serif'],
+                        'body': ['"Source Sans 3"', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Source Sans 3', system-ui, sans-serif; }
+        .font-display { font-family: 'DM Serif Display', Georgia, serif; }
+        .text-gradient {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .card-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-lift:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+        .mobile-menu { transform: translateX(100%); transition: transform 0.3s ease; }
+        .mobile-menu.active { transform: translateX(0); }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+        .badge-pulse { animation: pulse 2s infinite; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/95 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-brand-500 rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <span class="font-display text-xl text-white">[Brand Name]</span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 text-slate-300 hover:text-white transition-colors py-2">
+                            Services
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <div class="bg-slate-900 border border-slate-800 rounded-xl p-2 min-w-[200px] shadow-xl">
+                                <a href="services/tv-mounting.html" class="block px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors">TV Mounting</a>
+                                <a href="services/furniture-assembly.html" class="block px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors">Furniture Assembly</a>
+                                <a href="services/smart-home.html" class="block px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors">Smart Home</a>
+                                <a href="services/painting.html" class="block px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors">Painting</a>
+                                <a href="services/drywall-repair.html" class="block px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors">Drywall Repair</a>
+                                <a href="services/plumbing.html" class="block px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors">Plumbing</a>
+                                <a href="services/electrical.html" class="block px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors">Electrical</a>
+                                <a href="services/general-repairs.html" class="block px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors">General Repairs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 text-slate-300 hover:text-white transition-colors py-2">
+                            Service Areas
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <div class="bg-slate-900 border border-slate-800 rounded-xl p-2 min-w-[200px] shadow-xl">
+                                <a href="locations/bergen-county.html" class="block px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors">Bergen County</a>
+                                <a href="locations/hudson-county.html" class="block px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors">Hudson County</a>
+                                <a href="locations/morris-county.html" class="block px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors">Morris County</a>
+                                <a href="locations/essex-county.html" class="block px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors">Essex County</a>
+                                <a href="locations/passaic-county.html" class="block px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors">Passaic County</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="tel:+1XXXXXXXXXX" class="text-slate-300 hover:text-white transition-colors font-medium">(XXX) XXX-XXXX</a>
+                    <a href="#estimate" class="bg-brand-500 hover:bg-brand-600 text-slate-950 font-semibold px-5 py-2.5 rounded-lg transition-colors">Free Estimate</a>
+                </div>
+
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-400 hover:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu fixed inset-y-0 right-0 w-full max-w-sm bg-slate-900 border-l border-slate-800 lg:hidden z-50">
+            <div class="flex flex-col h-full">
+                <div class="flex items-center justify-between p-4 border-b border-slate-800">
+                    <span class="font-display text-lg">Menu</span>
+                    <button id="mobile-menu-close" class="p-2 text-slate-400 hover:text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                    </button>
+                </div>
+                <nav class="flex-1 overflow-y-auto p-4 space-y-2">
+                    <div class="text-sm uppercase tracking-wider text-slate-500 px-3 py-2">Services</div>
+                    <a href="services/tv-mounting.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800">TV Mounting</a>
+                    <a href="services/furniture-assembly.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800">Furniture Assembly</a>
+                    <a href="services/smart-home.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800">Smart Home</a>
+                    <a href="services/painting.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800">Painting</a>
+                    <a href="services/drywall-repair.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800">Drywall Repair</a>
+                    <a href="services/plumbing.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800">Plumbing</a>
+                    <a href="services/electrical.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800">Electrical</a>
+                    <a href="services/general-repairs.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800">General Repairs</a>
+                    <div class="text-sm uppercase tracking-wider text-slate-500 px-3 py-2 mt-4">Service Areas</div>
+                    <a href="locations/bergen-county.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800">Bergen County</a>
+                    <a href="locations/hudson-county.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800">Hudson County</a>
+                    <a href="locations/morris-county.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800">Morris County</a>
+                    <a href="locations/essex-county.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800">Essex County</a>
+                    <a href="locations/passaic-county.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800">Passaic County</a>
+                </nav>
+                <div class="p-4 border-t border-slate-800">
+                    <a href="tel:+1XXXXXXXXXX" class="block text-center text-slate-300 mb-3">(XXX) XXX-XXXX</a>
+                    <a href="#estimate" class="block w-full bg-brand-500 hover:bg-brand-600 text-slate-950 font-semibold px-5 py-3 rounded-lg text-center transition-colors">Get Free Estimate</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950"></div>
+        <div class="absolute top-1/4 right-0 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-1/4 w-64 h-64 bg-brand-600/5 rounded-full blur-3xl"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-brand-500/10 border border-brand-500/20 rounded-full px-4 py-1.5 mb-6">
+                        <span class="w-2 h-2 bg-brand-500 rounded-full badge-pulse"></span>
+                        <span class="text-brand-400 text-sm font-medium">Family-Owned Since 2021</span>
+                    </div>
+
+                    <h1 class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-tight mb-6">
+                        The Handyman Who<br><span class="text-gradient">Actually Shows Up</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-400 mb-8 max-w-xl mx-auto lg:mx-0">
+                        On time. Every time. No excuses. From leaky faucets to TV mounting, we handle your entire list in one visit. Serving Northern New Jersey.
+                    </p>
+
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-3 mb-8">
+                        <div class="flex items-center gap-2 bg-slate-800/50 rounded-full px-4 py-2">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <span class="text-sm text-slate-300">20+ Years Experience</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-slate-800/50 rounded-full px-4 py-2">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <span class="text-sm text-slate-300">Fully Insured</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-slate-800/50 rounded-full px-4 py-2">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <span class="text-sm text-slate-300">5 Counties</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#estimate" class="inline-flex items-center justify-center gap-2 bg-brand-500 hover:bg-brand-600 text-slate-950 font-semibold px-8 py-4 rounded-xl text-lg transition-all hover:scale-105">
+                            Get a Free Estimate
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </a>
+                        <a href="tel:+1XXXXXXXXXX" class="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-semibold px-8 py-4 rounded-xl text-lg transition-colors border border-slate-700">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                            (XXX) XXX-XXXX
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 overflow-hidden flex items-center justify-center">
+                        <div class="text-center p-8">
+                            <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-slate-700 flex items-center justify-center">
+                                <svg class="w-12 h-12 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                            </div>
+                            <p class="text-slate-500 text-sm">PHOTO: Handyman with customer<br>at doorstep, friendly handshake</p>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-slate-900 border border-slate-700 rounded-xl p-4 shadow-2xl animate-float hidden md:block">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-full bg-brand-500/20 flex items-center justify-center">
+                                <svg class="w-6 h-6 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            </div>
+                            <div>
+                                <div class="text-white font-semibold">$25 Off Guarantee</div>
+                                <div class="text-slate-400 text-sm">If we're late, you save</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problems Section -->
+    <section class="relative py-20 md:py-32 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-500 font-medium uppercase tracking-wider text-sm">Sound Familiar?</span>
+                <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-white mt-4">Tired of Contractors Who<br>Never Call Back?</h2>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-6">
+                <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 md:p-8 hover:border-red-500/50 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg>
+                    </div>
+                    <h3 class="font-display text-xl text-white mb-2">The Ghosting Handyman</h3>
+                    <p class="text-slate-400">You call, they say they'll come Tuesday. Tuesday comes and goes. No call, no text, nothing.</p>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 md:p-8 hover:border-red-500/50 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="font-display text-xl text-white mb-2">The "Too Small" Excuse</h3>
+                    <p class="text-slate-400">"Sorry, we don't do jobs that small." Meanwhile, that loose door handle has been driving you crazy for months.</p>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 md:p-8 hover:border-red-500/50 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                    </div>
+                    <h3 class="font-display text-xl text-white mb-2">The Endless List</h3>
+                    <p class="text-slate-400">Your honey-do list keeps growing. Every weekend you say you'll tackle it yourself. Every weekend, you don't.</p>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 md:p-8 hover:border-red-500/50 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                    </div>
+                    <h3 class="font-display text-xl text-white mb-2">The DIY Disaster</h3>
+                    <p class="text-slate-400">You watched the YouTube video. You bought the tools. Now there's a hole in the wall and the faucet still leaks.</p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <div class="inline-block bg-brand-500/10 border border-brand-500/20 rounded-2xl px-8 py-6">
+                    <p class="text-lg text-slate-300">We get it. Finding reliable help shouldn't be this hard.<br><span class="text-brand-400 font-medium">That's exactly why we do things differently.</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="py-20 md:py-32 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-white">What Homeowners Are Saying</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 card-lift">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-brand-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-brand-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-brand-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-brand-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-brand-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <blockquote class="text-lg text-slate-300 mb-4">"Finally, someone who shows up when they say they will!"</blockquote>
+                    <p class="text-slate-500">— Jennifer M., Paramus</p>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 card-lift">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-brand-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-brand-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-brand-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-brand-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-brand-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <blockquote class="text-lg text-slate-300 mb-4">"Fixed 8 things in one visit. Worth every penny."</blockquote>
+                    <p class="text-slate-500">— Michael C., Hoboken</p>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 card-lift">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-brand-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-brand-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-brand-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-brand-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-brand-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <blockquote class="text-lg text-slate-300 mb-4">"Honest, on time, and didn't try to upsell me on anything."</blockquote>
+                    <p class="text-slate-500">— Robert T., Morristown</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 md:py-32 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-500 font-medium uppercase tracking-wider text-sm">Our Services</span>
+                <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-white mt-4">One Call. Your Whole List. Done.</h2>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="services/tv-mounting.html" class="group bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-brand-500/50 hover:bg-slate-800 transition-all card-lift">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 flex items-center justify-center mb-4 group-hover:bg-brand-500/20 transition-colors">
+                        <svg class="w-7 h-7 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h3 class="font-display text-lg text-white mb-2">TV Mounting</h3>
+                    <p class="text-slate-400 text-sm">Safe, secure installation on any wall type. Hide those cables too.</p>
+                </a>
+
+                <a href="services/furniture-assembly.html" class="group bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-brand-500/50 hover:bg-slate-800 transition-all card-lift">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 flex items-center justify-center mb-4 group-hover:bg-brand-500/20 transition-colors">
+                        <svg class="w-7 h-7 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+                    </div>
+                    <h3 class="font-display text-lg text-white mb-2">Furniture Assembly</h3>
+                    <p class="text-slate-400 text-sm">IKEA, Wayfair, Amazon - we build it all, fast and right.</p>
+                </a>
+
+                <a href="services/smart-home.html" class="group bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-brand-500/50 hover:bg-slate-800 transition-all card-lift">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 flex items-center justify-center mb-4 group-hover:bg-brand-500/20 transition-colors">
+                        <svg class="w-7 h-7 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                    </div>
+                    <h3 class="font-display text-lg text-white mb-2">Smart Home</h3>
+                    <p class="text-slate-400 text-sm">Thermostats, doorbells, cameras - installed and configured.</p>
+                </a>
+
+                <a href="services/painting.html" class="group bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-brand-500/50 hover:bg-slate-800 transition-all card-lift">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 flex items-center justify-center mb-4 group-hover:bg-brand-500/20 transition-colors">
+                        <svg class="w-7 h-7 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+                    </div>
+                    <h3 class="font-display text-lg text-white mb-2">Painting</h3>
+                    <p class="text-slate-400 text-sm">Rooms, cabinets, trim, accent walls. Clean work.</p>
+                </a>
+
+                <a href="services/drywall-repair.html" class="group bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-brand-500/50 hover:bg-slate-800 transition-all card-lift">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 flex items-center justify-center mb-4 group-hover:bg-brand-500/20 transition-colors">
+                        <svg class="w-7 h-7 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
+                    </div>
+                    <h3 class="font-display text-lg text-white mb-2">Drywall Repair</h3>
+                    <p class="text-slate-400 text-sm">Holes patched, textures matched. Invisible repairs.</p>
+                </a>
+
+                <a href="services/plumbing.html" class="group bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-brand-500/50 hover:bg-slate-800 transition-all card-lift">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 flex items-center justify-center mb-4 group-hover:bg-brand-500/20 transition-colors">
+                        <svg class="w-7 h-7 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+                    </div>
+                    <h3 class="font-display text-lg text-white mb-2">Plumbing</h3>
+                    <p class="text-slate-400 text-sm">Leaky faucets, running toilets, clogged drains. Fixed.</p>
+                </a>
+
+                <a href="services/electrical.html" class="group bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-brand-500/50 hover:bg-slate-800 transition-all card-lift">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 flex items-center justify-center mb-4 group-hover:bg-brand-500/20 transition-colors">
+                        <svg class="w-7 h-7 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <h3 class="font-display text-lg text-white mb-2">Electrical</h3>
+                    <p class="text-slate-400 text-sm">Outlets, switches, ceiling fans, light fixtures.</p>
+                </a>
+
+                <a href="services/general-repairs.html" class="group bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-brand-500/50 hover:bg-slate-800 transition-all card-lift">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 flex items-center justify-center mb-4 group-hover:bg-brand-500/20 transition-colors">
+                        <svg class="w-7 h-7 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    </div>
+                    <h3 class="font-display text-lg text-white mb-2">General Repairs</h3>
+                    <p class="text-slate-400 text-sm">Doors, windows, decks, and everything on your list.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-20 md:py-32 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-500 font-medium uppercase tracking-wider text-sm">How It Works</span>
+                <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-white mt-4">Simple. Straightforward. No Surprises.</h2>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-brand-500 flex items-center justify-center text-slate-950 font-display text-2xl mb-4">1</div>
+                    <h3 class="font-display text-lg text-white mb-2">You Call or Text</h3>
+                    <p class="text-slate-400 text-sm">Tell us what's on your list. We'll ask a few questions.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-brand-500 flex items-center justify-center text-slate-950 font-display text-2xl mb-4">2</div>
+                    <h3 class="font-display text-lg text-white mb-2">We Give You a Quote</h3>
+                    <p class="text-slate-400 text-sm">Honest, upfront pricing. No hidden fees.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-brand-500 flex items-center justify-center text-slate-950 font-display text-2xl mb-4">3</div>
+                    <h3 class="font-display text-lg text-white mb-2">We Show Up (On Time)</h3>
+                    <p class="text-slate-400 text-sm">We text you when we're on our way.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-brand-500 flex items-center justify-center text-slate-950 font-display text-2xl mb-4">4</div>
+                    <h3 class="font-display text-lg text-white mb-2">We Get It Done</h3>
+                    <p class="text-slate-400 text-sm">Quality work, cleaned up when we leave.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantees -->
+    <section class="py-20 md:py-32 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-white">Our Promises to You</h2>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-slate-800/50 border-2 border-green-500/30 rounded-2xl p-6 text-center">
+                    <div class="w-14 h-14 mx-auto rounded-xl bg-green-500/10 flex items-center justify-center mb-4">
+                        <svg class="w-7 h-7 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="font-display text-lg text-white mb-2">On-Time Guarantee</h3>
+                    <p class="text-slate-400 text-sm">If we're late, you get $25 off.</p>
+                </div>
+                <div class="bg-slate-800/50 border-2 border-green-500/30 rounded-2xl p-6 text-center">
+                    <div class="w-14 h-14 mx-auto rounded-xl bg-green-500/10 flex items-center justify-center mb-4">
+                        <svg class="w-7 h-7 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="font-display text-lg text-white mb-2">Satisfaction Guarantee</h3>
+                    <p class="text-slate-400 text-sm">Not happy? We'll make it right.</p>
+                </div>
+                <div class="bg-slate-800/50 border-2 border-green-500/30 rounded-2xl p-6 text-center">
+                    <div class="w-14 h-14 mx-auto rounded-xl bg-green-500/10 flex items-center justify-center mb-4">
+                        <svg class="w-7 h-7 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="font-display text-lg text-white mb-2">Transparent Pricing</h3>
+                    <p class="text-slate-400 text-sm">The quote is the price. Period.</p>
+                </div>
+                <div class="bg-slate-800/50 border-2 border-green-500/30 rounded-2xl p-6 text-center">
+                    <div class="w-14 h-14 mx-auto rounded-xl bg-green-500/10 flex items-center justify-center mb-4">
+                        <svg class="w-7 h-7 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                    </div>
+                    <h3 class="font-display text-lg text-white mb-2">Clean Workspace</h3>
+                    <p class="text-slate-400 text-sm">We clean up after ourselves.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 md:py-32 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 flex items-center justify-center">
+                    <div class="text-center p-8">
+                        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-slate-700 flex items-center justify-center">
+                            <svg class="w-12 h-12 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                        </div>
+                        <p class="text-slate-500 text-sm">PHOTO: Family - owner, wife,<br>and son together</p>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-brand-500 font-medium uppercase tracking-wider text-sm">Family-Owned & Operated</span>
+                    <h2 class="font-display text-3xl sm:text-4xl text-white mt-4 mb-6">Meet the Family Behind the Work</h2>
+                    <div class="space-y-4 text-slate-400">
+                        <p>After 20 years of perfecting his craft in Ukraine, [Name] brought his skills to Northern New Jersey. What started as one man with a toolbox has grown into a trusted family business.</p>
+                        <p>When we come to your home, you're not getting a random contractor. You're getting family. Our name is on every project - and we take that personally.</p>
+                    </div>
+                    <div class="flex gap-8 mt-8">
+                        <div class="text-center"><div class="font-display text-4xl text-brand-500">20+</div><div class="text-slate-500 text-sm">Years Exp</div></div>
+                        <div class="text-center"><div class="font-display text-4xl text-brand-500">3</div><div class="text-slate-500 text-sm">Years in NJ</div></div>
+                        <div class="text-center"><div class="font-display text-4xl text-brand-500">5</div><div class="text-slate-500 text-sm">Counties</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section id="service-areas" class="py-20 md:py-32 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-white">Serving Northern New Jersey</h2>
+            </div>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-5">
+                    <h3 class="font-display text-brand-500 mb-3"><a href="locations/bergen-county.html" class="hover:text-brand-400">Bergen County</a></h3>
+                    <ul class="space-y-1 text-sm text-slate-400">
+                        <li><a href="locations/bergen/hackensack.html" class="hover:text-white">Hackensack</a></li>
+                        <li><a href="locations/bergen/paramus.html" class="hover:text-white">Paramus</a></li>
+                        <li><a href="locations/bergen/fort-lee.html" class="hover:text-white">Fort Lee</a></li>
+                        <li><a href="locations/bergen/teaneck.html" class="hover:text-white">Teaneck</a></li>
+                        <li><a href="locations/bergen/englewood.html" class="hover:text-white">Englewood</a></li>
+                    </ul>
+                </div>
+                <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-5">
+                    <h3 class="font-display text-brand-500 mb-3"><a href="locations/hudson-county.html" class="hover:text-brand-400">Hudson County</a></h3>
+                    <ul class="space-y-1 text-sm text-slate-400">
+                        <li><a href="locations/hudson/jersey-city.html" class="hover:text-white">Jersey City</a></li>
+                        <li><a href="locations/hudson/hoboken.html" class="hover:text-white">Hoboken</a></li>
+                        <li><a href="locations/hudson/union-city.html" class="hover:text-white">Union City</a></li>
+                        <li><a href="locations/hudson/bayonne.html" class="hover:text-white">Bayonne</a></li>
+                        <li><a href="locations/hudson/north-bergen.html" class="hover:text-white">North Bergen</a></li>
+                    </ul>
+                </div>
+                <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-5">
+                    <h3 class="font-display text-brand-500 mb-3"><a href="locations/morris-county.html" class="hover:text-brand-400">Morris County</a></h3>
+                    <ul class="space-y-1 text-sm text-slate-400">
+                        <li><a href="locations/morris/morristown.html" class="hover:text-white">Morristown</a></li>
+                        <li><a href="locations/morris/parsippany.html" class="hover:text-white">Parsippany</a></li>
+                        <li><a href="locations/morris/dover.html" class="hover:text-white">Dover</a></li>
+                        <li>Randolph</li>
+                        <li><a href="locations/morris/denville.html" class="hover:text-white">Denville</a></li>
+                    </ul>
+                </div>
+                <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-5">
+                    <h3 class="font-display text-brand-500 mb-3"><a href="locations/essex-county.html" class="hover:text-brand-400">Essex County</a></h3>
+                    <ul class="space-y-1 text-sm text-slate-400">
+                        <li><a href="locations/essex/newark.html" class="hover:text-white">Newark</a></li>
+                        <li><a href="locations/essex/montclair.html" class="hover:text-white">Montclair</a></li>
+                        <li><a href="locations/essex/bloomfield.html" class="hover:text-white">Bloomfield</a></li>
+                        <li><a href="locations/essex/livingston.html" class="hover:text-white">Livingston</a></li>
+                        <li>West Orange</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-5">
+                    <h3 class="font-display text-brand-500 mb-3"><a href="locations/passaic-county.html" class="hover:text-brand-400">Passaic County</a></h3>
+                    <ul class="space-y-1 text-sm text-slate-400">
+                        <li><a href="locations/passaic/paterson.html" class="hover:text-white">Paterson</a></li>
+                        <li><a href="locations/passaic/clifton.html" class="hover:text-white">Clifton</a></li>
+                        <li><a href="locations/passaic/passaic-city.html" class="hover:text-white">Passaic</a></li>
+                        <li><a href="locations/passaic/wayne.html" class="hover:text-white">Wayne</a></li>
+                        <li><a href="locations/passaic/little-falls.html" class="hover:text-white">Little Falls</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 md:py-32 bg-slate-950">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-white">Questions? We've Got Answers.</h2>
+            </div>
+            <div class="space-y-4">
+                <details class="group bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer">
+                        <span class="font-medium text-white">How much do you charge?</span>
+                        <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400">Our hourly rate is $XX-$XX depending on the job. For bigger projects, we provide a flat-rate quote upfront. Estimates are always free.</div>
+                </details>
+                <details class="group bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer">
+                        <span class="font-medium text-white">Do you handle small jobs?</span>
+                        <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400">Absolutely. One outlet, one door handle, one picture frame - we mean it when we say no job is too small.</div>
+                </details>
+                <details class="group bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer">
+                        <span class="font-medium text-white">Are you licensed and insured?</span>
+                        <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400">Yes. We're fully licensed in New Jersey and carry liability insurance.</div>
+                </details>
+                <details class="group bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer">
+                        <span class="font-medium text-white">Is this a family business?</span>
+                        <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400">Yes! When you hire us, you get me, my wife, or my son - not a stranger from a staffing agency.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="estimate" class="py-20 md:py-32 bg-gradient-to-br from-brand-600 to-brand-700">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-slate-950">Ready to Cross Things Off Your List?</h2>
+                <p class="text-brand-900/70 mt-4 text-lg">Get a reliable handyman who shows up, does the job right, and treats your home with respect.</p>
+            </div>
+            <form class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl max-w-xl mx-auto">
+                <div class="space-y-4">
+                    <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 outline-none text-slate-900">
+                    <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 outline-none text-slate-900">
+                    <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 outline-none text-slate-900">
+                    <textarea placeholder="What's on your list?" rows="4" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 outline-none resize-none text-slate-900"></textarea>
+                    <button type="submit" class="w-full bg-slate-950 hover:bg-slate-800 text-white font-semibold py-4 rounded-xl transition-colors text-lg">Get My Free Estimate</button>
+                </div>
+                <p class="text-center text-slate-500 text-sm mt-4">We respond within 2 hours. Yes, really.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h4 class="font-display text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><a href="#services" class="hover:text-white">Services</a></li>
+                        <li><a href="#service-areas" class="hover:text-white">Service Areas</a></li>
+                        <li><a href="#about" class="hover:text-white">About Us</a></li>
+                        <li><a href="#faq" class="hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-display text-white mb-4">Services</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><a href="services/tv-mounting.html" class="hover:text-white">TV Mounting</a></li>
+                        <li><a href="services/furniture-assembly.html" class="hover:text-white">Furniture Assembly</a></li>
+                        <li><a href="services/plumbing.html" class="hover:text-white">Plumbing</a></li>
+                        <li><a href="services/electrical.html" class="hover:text-white">Electrical</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-display text-white mb-4">Service Areas</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><a href="locations/bergen-county.html" class="hover:text-white">Bergen County</a></li>
+                        <li><a href="locations/hudson-county.html" class="hover:text-white">Hudson County</a></li>
+                        <li><a href="locations/morris-county.html" class="hover:text-white">Morris County</a></li>
+                        <li><a href="locations/essex-county.html" class="hover:text-white">Essex County</a></li>
+                        <li><a href="locations/passaic-county.html" class="hover:text-white">Passaic County</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-display text-white mb-4">Contact</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li>Phone: (XXX) XXX-XXXX</li>
+                        <li>Email: info@handymannj.com</li>
+                        <li>License #XXXXX</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-center text-slate-500 text-sm">
+                &copy; 2024 [Brand Name]. All rights reserved. | Family-Owned & Operated | Fully Insured
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.add('active'));
+        mobileMenuClose.addEventListener('click', () => mobileMenu.classList.remove('active'));
+        mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.remove('active')));
+    </script>
+</body>
+</html>
